@@ -71,6 +71,7 @@ body {
 .hero__menu {
     margin: 0 auto;
     text-align: center;
+    min-height: 100vh;
 }
 
 .hero__title {
@@ -102,18 +103,20 @@ body {
 }
 
 .menu__picture {
+    margin: 0 auto;
     margin-top: 55px;
     padding-bottom: 40px;
+    width: 100%;
+    height: 100%;
+    display: block;
 }
 
 .menu__img {
-    background-image: url(images/illustration-mockups.svg);
-    background-size: cover;
+    background-size: auto;
     width: 90%;
     height: 90%;
     max-width: 600px;
-    display: block;
-    margin: 0 auto;
+
 }
 
 .section__container {
@@ -252,4 +255,42 @@ body {
     font-size: 12px;
     font-family: var(--open-sans);
     margin-bottom: 30px;
+}
+
+@media (min-width: 820px) {
+
+    .hero {
+        background-image: url(images/bg-hero-desktop.svg);
+        min-height: 70vh;
+    }
+
+    .hero__menu {
+        display: flex;
+        flex-direction: row;
+        min-height: 70vh;
+        align-items: center;
+    }
+
+    .hero__letter {
+        text-align: start;
+        transform: translateY(-10%);
+    }
+
+    .hero__title {
+        margin: 50px 0 0;
+        line-height: 1.5;
+    }
+
+    .hero__parrafo {
+        padding: 0.1px 0;
+    }
+
+    .menu__img {
+        max-width: 900px;
+    }
+
+    .menu__btn {
+        padding: 15px 50px;
+    }
+
 }
