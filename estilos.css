@@ -32,7 +32,7 @@ body {
     background-image: url(images/bg-hero-mobile.svg);
     background-repeat: no-repeat;
     background-size: 100%;
-    min-height: 100vh;
+    min-height: 400px;
     position: relative;
 }
 
@@ -71,7 +71,7 @@ body {
 .hero__menu {
     margin: 0 auto;
     text-align: center;
-    min-height: 100vh;
+    min-height: 400px;
 }
 
 .hero__title {
